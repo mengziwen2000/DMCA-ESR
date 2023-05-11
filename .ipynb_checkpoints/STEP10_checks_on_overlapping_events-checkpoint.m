@@ -15,7 +15,6 @@ function [BEGINNING_RAIN, END_RAIN, BEGINNING_FLOW, END_FLOW]=STEP10_checks_on_o
 %END_FLOW: end of flow events as matlab date
 
     q=1;
-    %定义一个空矩阵
     marker_overlapping=[];
     for g=1:length(end_rain_ungrouped)-1
         if end_rain_ungrouped(g)> beginning_rain_ungrouped(g+1) | end_flow_ungrouped(g)> beginning_flow_ungrouped(g+1)
