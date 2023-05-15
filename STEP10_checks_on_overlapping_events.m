@@ -44,7 +44,7 @@ function [BEGINNING_RAIN, END_RAIN, BEGINNING_FLOW, END_FLOW]=STEP10_checks_on_o
         beginning_rain_ungrouped(to_group(end)+1)=NaN;
         beginning_flow_ungrouped(to_group(end)+1)=NaN;
         end_flow_ungrouped(to_group(end)+1)=NaN;
-        end_rain_ungrouped(to_group(end)+1)=NaN;
+        end_rain_ungrouped(to_group(end)+1)=NaN; % 应该错了，最开始出错的降雨结束点没化为NaN
         to_group=[];
     end
     end
